@@ -9,10 +9,10 @@ spring:
   mail:
     host: smtp.qq.com
     port: 465
-    username: 1932794922@qq.com
+    username: xxxxx
     #kxbmznmegsasbeab
     password: kxbmznmegsasbeab
-    form: 1932794922@qq.com
+    form: xxxxx
 
   cloud:
     nacos:
