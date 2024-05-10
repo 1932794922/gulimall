@@ -1,0 +1,29 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: gulimall-cart
+  cloud:
+    nacos:
+      server-addr: 192.168.10.100:8848
+  main:
+    allow-circular-references: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  thymeleaf:
+    cache: false
+  redis:
+    host: 192.168.10.100
+    port: 6379
+  session:
+    store-type: redis
+    timeout: 3600
+
+gulimall:
+  thread:
+    core-size: 10
+    max-size: 200
+    keep-alive-time: 10
+    queue-capacity: 10000

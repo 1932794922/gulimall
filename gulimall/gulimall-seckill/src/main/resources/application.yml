@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: gulimall-seckill
+  cloud:
+    nacos:
+      server-addr: 192.168.10.100:8848
+      config:
+        timeout: 10000
+  rabbitmq:
+    host: 192.168.10.100
+    port: 5672
+    listener:
+      simple:
+        acknowledge-mode: manual
+    # 是否启用信息拒绝
+    publisher-returns: true
+    virtual-host: /
+    template:
+      mandatory: true
+  redis:
+    host: 192.168.10.100
+    port: 6379
+  session:
+    store-type: redis
+    timeout: 3600
+  thymeleaf:
+    cache: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+server:
+  port: 8222
+

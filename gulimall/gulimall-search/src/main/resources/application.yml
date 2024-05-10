@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: gulimall-search
+  cloud:
+    nacos:
+      server-addr: 192.168.10.100:8848
+      config:
+        timeout: 10000
+  redis:
+    host: 192.168.10.100
+    port: 6379
+  session:
+    store-type: redis
+    timeout: 3600
+  thymeleaf:
+    cache: false
+server:
+  port: 8200
+
+
+
+
+elasticsearch:
+  #集群名字
+#  cluster-name: elasticsearch
+  #集群节点
+  host: 192.168.10.100
+  port: 9200
+  scheme: http
